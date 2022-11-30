@@ -7,7 +7,6 @@
  Jedeme retro cernobile, dnes barvy nepotrebujeme.
 */
 
-
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +15,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
+
 
 
 /* HLAVICKA */
@@ -88,7 +88,6 @@ li a {
 
 @media (max-width: 499px) {
     ul {
-        list-style-type: none;
         margin-left: 30pt;
         margin-right: 30pt;
         padding-left: 0pt;
@@ -117,7 +116,21 @@ li a {
 }
 
 @media (min-width: 1001px) {
-   
+    .telo {
+        display: flex;
+    }
+
+    ul {
+        width: 60%;
+        padding: 15pt;
+    }
+    
+    li a {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid darkgrey;
+        padding: 5pt;
+    }
 }
 
 
@@ -148,17 +161,52 @@ img {
     width: 100vw;
 }
 
-a:link {
-    color: darkgrey;
+
+
+
+@media (max-width: 499px) {
+    .tpopisek {
+        color: darkgray;
+        text-align: center;
+        margin-top: 0;
+    } 
+
+    a:link {
+        color: darkgrey;
+    }
 }
 
-.tpopisek {
-    color: darkgray;
-    text-align: center;
-    margin-top: 0;
+@media (min-width: 500px) and (max-width: 1000px) {
+    .kontejner {
+        position: relative;
+    }
+    .tpopisek {
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    a:link {
+        color: white;
+    }
 }
 
+@media (min-width: 1001px) {
+    .kontejner {
+        position: relative;
+    }
+    .tpopisek {
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
 
+    a:link {
+        color: white;
+    }
+}
 
 
 
@@ -166,7 +214,7 @@ a:link {
 /* FOTOGALERIE */
 
 @media (max-width: 499px) {
-    .popisek.copy {
+    .popisek {
         color: darkgray;
         text-align: center;
         margin-top: 0;
@@ -205,10 +253,12 @@ a:link {
         color: white;
         transition: 0.3s;
         position: absolute;
+        padding-left: 15pt;
     }
+
     
     .foto:hover .popisek {
-        transform: translateY(-100%);
+        transform: translateY(-150%);
     }
 }
 
@@ -258,5 +308,5 @@ a:link {
 footer {
     color: darkgrey;
     background: linear-gradient(darkgray, gainsboro, ghostwhite, white);
-    padding-top: 20pt 
+    padding-top: 20pt
 }
