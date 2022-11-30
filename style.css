@@ -166,7 +166,7 @@ a:link {
 /* FOTOGALERIE */
 
 @media (max-width: 499px) {
-    .popisek {
+    .popisek.copy {
         color: darkgray;
         text-align: center;
         margin-top: 0;
