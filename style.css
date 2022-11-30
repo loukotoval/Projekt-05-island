@@ -186,12 +186,12 @@ h2::after {
     }
 
 p {
-    margin-left: 15pt;
-    margin-right: 15pt;
+    margin-left: 30pt;
+    margin-right: 30pt;
 }
 
 img {
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -338,8 +338,19 @@ img {
 
 
 /* PATICKA */
+
 footer {
     color: darkgrey;
-    background: linear-gradient(darkgray, gainsboro, ghostwhite, white);
     padding-top: 20pt
 }
+
+@media (max-width: 1000px) {
+    footer {
+        width: 960px;
+        background: linear-gradient(darkgray, gainsboro, ghostwhite, white);
+    }
+ }
+ 
+ @media (min-width: 1001px) {
+    
+ }
