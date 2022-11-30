@@ -18,6 +18,9 @@ body {
 
 
 
+
+
+
 /* HLAVICKA */
 
 header {
@@ -25,8 +28,9 @@ header {
     radial-gradient(circle, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/island-hlavicka.jpg');
     background-position: center center;
 	background-size: cover;
-    padding: 20pt;
 }
+
+
 
 .perex::after {
 	content:"";
@@ -69,6 +73,34 @@ header {
     .titulek {
         font-size: 48px;
     }
+}
+
+
+@media (max-width: 1000px) {
+   header {
+    padding: 20pt;
+   } 
+}
+
+@media (min-width: 1001px) {
+
+    header {
+        padding-left: 20pt;
+        padding-right: 20pt;
+        padding-top: 40pt;
+        padding-bottom: 60pt;
+       } 
+
+   .telo {
+        width: 960px;
+        background-color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -50pt;
+        padding-top: 20pt;
+        box-shadow: 5px 10px 18px grey;
+   }
 }
 
 
@@ -116,13 +148,14 @@ li a {
 }
 
 @media (min-width: 1001px) {
-    .telo {
+    .uvod {
         display: flex;
     }
 
     ul {
-        width: 60%;
-        padding: 15pt;
+        width: 100%;
+        padding-left: 15pt;
+        padding-right: 15pt;
     }
     
     li a {
